@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px;
+    width: 500px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+button{
+    width: 10rem;
+    padding: .8rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+h1{
+    text-align: center;
+    color: orange;
+    text-shadow: 0px 1px black;
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+.question{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0rem;
+    color: green;
+    text-shadow: 0px 1px black;
+
+}
+.answers{
+    margin-left: 2rem;
+    display: block;
+    padding: 1rem;
+}
+input{
+    cursor: pointer;
+}
+label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+}
+.back{
+    position: absolute;
+    rotate: 270deg;
+    top: 1.5rem;
+    color:black;
+    font-weight: bold;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+.back-text{
+    position:absolute;
+    top: 1.5rem;
+    right: -2.5rem;
+    font-size: 1.2rem;
+    rotate: -270deg;
+    opacity: 0;
+    transition: all .3s;
+}
+
+p{
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+.back:hover .back-text{
+    opacity: 1;
+    background-color:lightgray;
+}
+.answers:hover{
+    background-color: rgb(243, 240, 240);
+    border-radius: 1rem;
+}
+button:hover{
+    background-color: lightgreen;
+    text-shadow: 0px 2px white;
+}
+@media (max-width:500px) {
+    body{
+        width: 95%;
+        margin: auto;
+        scroll-behavior: none;
+        align-items: start;
+    }
+    
+    
+    .container{
+        width: 95%;
+        height: 92%;
+        margin: 1.5rem 1rem;
+    }
+    .quiz-filter{
+        font-size: 1.1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .back{
+        font-size: 3rem;
+        margin-left: -1rem;
+        margin-top: -.5rem;
+    }
+    .back-text{
+        font-size: 1rem;
+    }
+    .answers{
+        padding: .7rem;
+    }
+    p{
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+}
+
+

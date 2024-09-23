@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Filter your Intrest</h1>
+
+        <div class="filter">
+            <select class="quiz-filter" name="Select">
+            <option value="gk" >Genral Knowledge (English)</option>
+            <option value="bihar-gk" >GK of Bihar (Hindi)</option>
+            <option value="india-gk" >GK of India (Hindi)</option>
+        </select>
+        </div>
+        
+
+        <div class="qus-ans">
+            <div class="question">
+                <h2>here is a title of the question</h2>
+            </div>
+
+
+            <div class="answers">
+                <input type="radio" id="1st-qus" name="answer">
+                <label for="1st-qus">its first question</label>
+            </div>
+            <div class="answers">
+                <input type="radio" id="2nd-qus" name="answer">
+                <label for="2nd-qus">its 2nd question</label>
+
+            </div>
+            <div class="answers">
+                <input type="radio" id="3rd-qus" name="answer">
+                <label for="3rd-qus">its 3rd question</label>
+            </div>
+            <div class="answers">
+                <input type="radio" id="4th-qus" name="answer">
+                <label for="4th-qus">its fourth question</label>
+            </div>
+            <div class="btns">
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+        <div class="back-btn">
+            <h1 class="back">↑ <span class="back-text">Previous</span></h1>
+        </div>
+    </div>
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
